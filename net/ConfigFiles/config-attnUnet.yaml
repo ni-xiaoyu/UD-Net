@@ -1,0 +1,20 @@
+# Training configs for Seg
+
+dataset : rice Dataset
+n_classes : 3
+channels : 4
+ignore_index : 255
+net : Attention_UNet
+optimizer : adam
+scheduler : StepLR
+lr : 0.001
+batchsize : 10
+start_epoch : 0
+end_epoch : 100
+result_dir : "D:/BARELAND/NET/attnUnet-1adam0.001_optical"
+criterion : weight_crossentropy
+logIterval : 10
+valIterval : 1
+resume : 
+  flag : False
+  state_path : "D:/PROGRAM/HZY/X_RESULT/attunet-adam/Attention_UNet-0.8607-ep31.pth"
